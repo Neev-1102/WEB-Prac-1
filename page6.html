@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Fee Payment & Receipt</title>
+</head>
+<body>
+    <h1>Fee Payment</h1>
+
+    <form action="/submit-fee-payment" method="post">
+        <label for="student-id">Student ID:</label><br />
+        <input type="text" id="student-id" name="student-id" required /><br /><br />
+
+        <label for="student-name">Student Name:</label><br />
+        <input type="text" id="student-name" name="student-name" required /><br /><br />
+
+        <label for="fee-amount">Fee Amount (INR):</label><br />
+        <input type="number" id="fee-amount" name="fee-amount" min="0" required /><br /><br />
+
+        <label for="payment-method">Payment Method:</label><br />
+        <select id="payment-method" name="payment-method" required>
+            <option value="">--Select--</option>
+            <option value="credit-card">Credit Card</option>
+            <option value="debit-card">Debit Card</option>
+            <option value="net-banking">Net Banking</option>
+            <option value="upi">UPI</option>
+            <option value="cash">Cash</option>
+        </select><br /><br />
+
+        <button type="submit">Pay Fee</button>
+    </form>
+
+    <hr />
+
+    <h2>Payment Receipt</h2>
+    <p><strong>Receipt No:</strong> 1234</p>
+    <p><strong>Student ID:</strong> 24CS000</p>
+    <p><strong>Student Name:</strong> Neev Rathod</p>
+    <p><strong>Amount Paid:</strong> INR 10,000</p>
+    <p><strong>Payment Method:</strong> Credit Card</p>
+    <p><strong>Date:</strong> 2025-07-03</p>
+
+     <a href="index.html">Go to the home page!</a>
+</body>
+</html>

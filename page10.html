@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Help & Support</title>
+</head>
+<body>
+    <h1>Help & Support</h1>
+
+    <h2>Contact Support</h2>
+    <form action="/submit-support-request" method="post">
+        <label for="student-id">Student ID:</label><br>
+        <input type="text" id="student-id" name="student-id" required><br><br>
+
+        <label for="student-name">Student Name:</label><br>
+        <input type="text" id="student-name" name="student-name" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="issue-type">Issue Type:</label><br>
+        <select id="issue-type" name="issue-type" required>
+            <option value="">--Select--</option>
+            <option value="login">Login Issue</option>
+            <option value="fees">Fee Payment</option>
+            <option value="exam">Examination</option>
+            <option value="assignment">Assignment</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <label for="message">Describe Your Issue:</label><br>
+        <textarea id="message" name="message" rows="5" cols="40" required></textarea><br><br>
+
+        <button type="submit">Submit Request</button>
+    </form>
+
+    <hr>
+
+    <h2>Support Contact Information</h2>
+    <p><strong>Email:</strong> support@charusat.edu.in</p>
+    <p><strong>Phone:</strong> +91 12345 67890</p>
+    <p><strong>Office Hours:</strong> Monday to Friday, 9:00 AM – 5:00 PM</p>
+     <a href="index.html">Go to the home page!</a>
+</body>
+</html>
